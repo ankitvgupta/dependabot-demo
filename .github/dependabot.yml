@@ -1,0 +1,27 @@
+# Please see the documentation for all configuration options:
+# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+
+  # pip / requirements.txt
+  - package-ecosystem: pip
+    directory: compatible_release
+    schedule:
+      interval: daily
+      time: "17:00"
+      timezone: "America/New_York"
+    ignore:
+      # ignore all patch updates 
+      - dependency-name: "*"
+        update-types: ["version-update:semver-patch"]
+  - package-ecosystem: pip
+    directory: pinned_release
+    schedule:
+      interval: daily
+      time: "17:00"
+      timezone: "America/New_York"
+    ignore:
+      # ignore all patch updates 
+      - dependency-name: "*"
+        update-types: ["version-update:semver-patch"]
