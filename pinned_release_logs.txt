@@ -1,0 +1,111 @@
+  proxy | time="2022-04-13T00:23:03Z" level=info msg="proxy starting" commit=0cfe6fc8a85a641097e4d9faf5c8349b892b1e40
+  proxy | 2022/04/13 00:23:03 Listening (:1080)
+updater | 2022-04-13T00:23:04.051693150 [anonymous-instance:main:WARN:src/firecracker/src/main.rs:370] You are using a deprecated parameter: --seccomp-level 2, that will be removed in a future version.
+updater | 2022-04-13T00:23:04.078847481 [344120081:main:WARN:src/devices/src/legacy/serial.rs:432] Detached the serial input due to peer close/error.
+updater | time="2022-04-13T00:23:05Z" level=info msg="guest starting" commit=f727200bdf4574dc1f7be439933549abd8d15da9
+updater | time="2022-04-13T00:23:05Z" level=info msg="starting job..." fetcher_timeout=5m0s job_id=344120081 updater_timeout=45m0s updater_version=0.180.5-fa5bb09ca507cf1caf68ca73cfd011f9620038d6
+updater | I, [2022-04-13T00:23:07.365202 #7]  INFO -- sentry: ** [Raven] Raven 3.1.2 ready to catch errors
+updater | INFO <job_344120081> Starting job processing
+  proxy | 2022/04/13 00:23:09 [002] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo
+  proxy | 2022/04/13 00:23:09 [002] * authenticating github api request
+  proxy | 2022/04/13 00:23:10 [002] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo
+  proxy | 2022/04/13 00:23:10 [004] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/git/refs/heads/main
+  proxy | 2022/04/13 00:23:10 [004] * authenticating github api request
+  proxy | 2022/04/13 00:23:10 [004] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/git/refs/heads/main
+  proxy | 2022/04/13 00:23:10 [006] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/pinned_release?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+  proxy | 2022/04/13 00:23:10 [006] * authenticating github api request
+  proxy | 2022/04/13 00:23:10 [006] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/pinned_release?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+  proxy | 2022/04/13 00:23:10 [008] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/pinned_release/requirements.txt?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+  proxy | 2022/04/13 00:23:10 [008] * authenticating github api request
+  proxy | 2022/04/13 00:23:10 [008] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/pinned_release/requirements.txt?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+  proxy | 2022/04/13 00:23:10 [010] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+  proxy | 2022/04/13 00:23:10 [010] * authenticating github api request
+  proxy | 2022/04/13 00:23:10 [010] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+updater | INFO <job_344120081> Finished job processing
+updater | time="2022-04-13T00:23:10Z" level=info msg="task complete" container_id=job-344120081-file-fetcher exit_code=0 job_id=344120081 step=fetcher
+updater | I, [2022-04-13T00:23:11.639424 #8]  INFO -- sentry: ** [Raven] Raven 3.1.2 ready to catch errors
+updater | INFO <job_344120081> Starting job processing
+updater | INFO <job_344120081> Starting update job for ankitvgupta/dependabot-demo
+updater | INFO <job_344120081> Checking if aiohttp 3.7.0 needs updating
+updater | INFO <job_344120081> Ignored versions:
+updater | INFO <job_344120081>   version-update:semver-patch - from .github/dependabot.yml
+  proxy | 2022/04/13 00:23:17 [014] GET https://pypi.org:443/simple/aiohttp/
+  proxy | 2022/04/13 00:23:17 [014] 200 https://pypi.org:443/simple/aiohttp/
+updater | INFO <job_344120081> Latest version is 3.8.1
+  proxy | 2022/04/13 00:23:18 [016] GET https://pypi.org:443/simple/aiohttp/
+  proxy | 2022/04/13 00:23:18 [016] 200 https://pypi.org:443/simple/aiohttp/
+updater | INFO <job_344120081> Requirements to unlock own
+updater | INFO <job_344120081> Requirements update strategy bump_versions
+updater | INFO <job_344120081> Updating aiohttp from 3.7.0 to 3.8.1
+  proxy | 2022/04/13 00:23:19 [018] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/commits?per_page=100
+  proxy | 2022/04/13 00:23:19 [018] * authenticating github api request
+  proxy | 2022/04/13 00:23:19 [018] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/commits?per_page=100
+  proxy | 2022/04/13 00:23:19 [020] GET https://pypi.org:443/pypi/aiohttp/json
+  proxy | 2022/04/13 00:23:19 [020] 200 https://pypi.org:443/pypi/aiohttp/json
+  proxy | 2022/04/13 00:23:19 [022] GET https://api.github.com:443/repos/aio-libs/aiohttp/releases?per_page=100
+  proxy | 2022/04/13 00:23:19 [022] * authenticating github api request
+  proxy | 2022/04/13 00:23:20 [022] 200 https://api.github.com:443/repos/aio-libs/aiohttp/releases?per_page=100
+  proxy | 2022/04/13 00:23:20 [024] GET https://api.github.com:443/repos/aio-libs/aiohttp/contents/
+  proxy | 2022/04/13 00:23:20 [024] * authenticating github api request
+  proxy | 2022/04/13 00:23:20 [024] 200 https://api.github.com:443/repos/aio-libs/aiohttp/contents/
+  proxy | 2022/04/13 00:23:20 [026] GET https://api.github.com:443/repos/aio-libs/aiohttp/contents/docs
+  proxy | 2022/04/13 00:23:20 [026] * authenticating github api request
+  proxy | 2022/04/13 00:23:20 [026] 200 https://api.github.com:443/repos/aio-libs/aiohttp/contents/docs
+  proxy | 2022/04/13 00:23:20 [028] GET https://api.github.com:443/repos/aio-libs/aiohttp/contents/CHANGES.rst?ref=master
+  proxy | 2022/04/13 00:23:20 [028] * authenticating github api request
+  proxy | 2022/04/13 00:23:20 [028] 200 https://api.github.com:443/repos/aio-libs/aiohttp/contents/CHANGES.rst?ref=master
+  proxy | 2022/04/13 00:23:20 [030] GET https://github.com:443/aio-libs/aiohttp.git/info/refs?service=git-upload-pack
+  proxy | 2022/04/13 00:23:20 [030] * authenticating git server request (host: github.com)
+  proxy | 2022/04/13 00:23:23 [030] 200 https://github.com:443/aio-libs/aiohttp.git/info/refs?service=git-upload-pack
+  proxy | 2022/04/13 00:23:23 [032] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:23 [032] * authenticating github api request
+  proxy | 2022/04/13 00:23:24 [032] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:24 [034] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+  proxy | 2022/04/13 00:23:24 [034] * authenticating github api request
+  proxy | 2022/04/13 00:23:24 [034] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+  proxy | 2022/04/13 00:23:24 [036] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:24 [036] * authenticating github api request
+  proxy | 2022/04/13 00:23:24 [036] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:24 [038] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+  proxy | 2022/04/13 00:23:24 [038] * authenticating github api request
+  proxy | 2022/04/13 00:23:24 [038] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+  proxy | 2022/04/13 00:23:24 [040] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:24 [040] * authenticating github api request
+  proxy | 2022/04/13 00:23:24 [040] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:25 [042] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+  proxy | 2022/04/13 00:23:25 [042] * authenticating github api request
+  proxy | 2022/04/13 00:23:25 [042] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+updater | INFO <job_344120081> Submitting aiohttp pull request for creation
+updater | INFO <job_344120081> Checking if absl-py 1.0.0 needs updating
+updater | INFO <job_344120081> Ignored versions:
+updater | INFO <job_344120081>   version-update:semver-patch - from .github/dependabot.yml
+  proxy | 2022/04/13 00:23:25 [046] GET https://pypi.org:443/simple/absl-py/
+  proxy | 2022/04/13 00:23:25 [046] 200 https://pypi.org:443/simple/absl-py/
+updater | INFO <job_344120081> Latest version is 1.0.0
+updater | INFO <job_344120081> No update needed for absl-py 1.0.0
+updater | INFO <job_344120081> Checking if botocore 1.24.0 needs updating
+updater | INFO <job_344120081> Ignored versions:
+updater | INFO <job_344120081>   version-update:semver-patch - from .github/dependabot.yml
+  proxy | 2022/04/13 00:23:25 [048] GET https://pypi.org:443/simple/botocore/
+  proxy | 2022/04/13 00:23:25 [048] 200 https://pypi.org:443/simple/botocore/
+updater | INFO <job_344120081> All updates for botocore were ignored
+updater | INFO <job_344120081> Checking if bokeh 2.4.0 needs updating
+updater | INFO <job_344120081> Ignored versions:
+updater | INFO <job_344120081>   version-update:semver-patch - from .github/dependabot.yml
+  proxy | 2022/04/13 00:23:27 [050] GET https://pypi.org:443/simple/bokeh/
+  proxy | 2022/04/13 00:23:27 [050] 200 https://pypi.org:443/simple/bokeh/
+updater | INFO <job_344120081> All updates for bokeh were ignored
+updater | INFO <job_344120081> Checking if boto3 1.21.0 needs updating
+updater | INFO <job_344120081> Ignored versions:
+updater | INFO <job_344120081>   version-update:semver-patch - from .github/dependabot.yml
+  proxy | 2022/04/13 00:23:27 [052] GET https://pypi.org:443/simple/boto3/
+  proxy | 2022/04/13 00:23:27 [052] 200 https://pypi.org:443/simple/boto3/
+updater | INFO <job_344120081> All updates for boto3 were ignored
+updater | INFO <job_344120081> Finished job processing
+updater | INFO Results:
+updater | +---------+---------------------------------+
+updater | |    Changes to Dependabot Pull Requests    |
+updater | +---------+---------------------------------+
+updater | | created | aiohttp ( from 3.7.0 to 3.8.1 ) |
+updater | +---------+---------------------------------+
+updater | time="2022-04-13T00:23:28Z" level=info msg="task complete" container_id=job-344120081-updater exit_code=0 job_id=344120081 step=updater

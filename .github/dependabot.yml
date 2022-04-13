@@ -8,9 +8,7 @@ updates:
   - package-ecosystem: pip
     directory: compatible_release
     schedule:
-      interval: daily
-      time: "17:00"
-      timezone: "America/New_York"
+      interval: monthly
     ignore:
       # ignore all patch updates 
       - dependency-name: "*"
@@ -18,9 +16,7 @@ updates:
   - package-ecosystem: pip
     directory: pinned_release
     schedule:
-      interval: daily
-      time: "17:00"
-      timezone: "America/New_York"
+      interval: monthly
     ignore:
       # ignore all patch updates 
       - dependency-name: "*"

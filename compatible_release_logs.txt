@@ -1,0 +1,243 @@
+  proxy | time="2022-04-13T00:23:03Z" level=info msg="proxy starting" commit=0cfe6fc8a85a641097e4d9faf5c8349b892b1e40
+  proxy | 2022/04/13 00:23:03 Listening (:1080)
+updater | 2022-04-13T00:23:03.561202851 [anonymous-instance:main:WARN:src/firecracker/src/main.rs:370] You are using a deprecated parameter: --seccomp-level 2, that will be removed in a future version.
+updater | 2022-04-13T00:23:03.578028003 [344120054:main:WARN:src/devices/src/legacy/serial.rs:432] Detached the serial input due to peer close/error.
+updater | time="2022-04-13T00:23:05Z" level=info msg="guest starting" commit=f727200bdf4574dc1f7be439933549abd8d15da9
+updater | time="2022-04-13T00:23:05Z" level=info msg="starting job..." fetcher_timeout=5m0s job_id=344120054 updater_timeout=45m0s updater_version=0.180.5-fa5bb09ca507cf1caf68ca73cfd011f9620038d6
+updater | I, [2022-04-13T00:23:06.529800 #8]  INFO -- sentry: ** [Raven] Raven 3.1.2 ready to catch errors
+updater | INFO <job_344120054> Starting job processing
+  proxy | 2022/04/13 00:23:08 [002] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo
+  proxy | 2022/04/13 00:23:08 [002] * authenticating github api request
+  proxy | 2022/04/13 00:23:08 [002] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo
+  proxy | 2022/04/13 00:23:08 [004] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/git/refs/heads/main
+  proxy | 2022/04/13 00:23:08 [004] * authenticating github api request
+  proxy | 2022/04/13 00:23:08 [004] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/git/refs/heads/main
+  proxy | 2022/04/13 00:23:08 [006] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/compatible_release?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+  proxy | 2022/04/13 00:23:08 [006] * authenticating github api request
+  proxy | 2022/04/13 00:23:08 [006] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/compatible_release?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+  proxy | 2022/04/13 00:23:08 [008] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/compatible_release/requirements.txt?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+  proxy | 2022/04/13 00:23:08 [008] * authenticating github api request
+  proxy | 2022/04/13 00:23:08 [008] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/compatible_release/requirements.txt?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+  proxy | 2022/04/13 00:23:08 [010] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+  proxy | 2022/04/13 00:23:08 [010] * authenticating github api request
+  proxy | 2022/04/13 00:23:09 [010] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/contents/?ref=ac08a163d1bae31e49a5e5d63527cb9ef2fba1f8
+updater | INFO <job_344120054> Finished job processing
+updater | time="2022-04-13T00:23:09Z" level=info msg="task complete" container_id=job-344120054-file-fetcher exit_code=0 job_id=344120054 step=fetcher
+updater | I, [2022-04-13T00:23:10.047136 #7]  INFO -- sentry: ** [Raven] Raven 3.1.2 ready to catch errors
+updater | INFO <job_344120054> Starting job processing
+updater | INFO <job_344120054> Starting update job for ankitvgupta/dependabot-demo
+updater | INFO <job_344120054> Checking if botocore  needs updating
+updater | INFO <job_344120054> Ignored versions:
+updater | INFO <job_344120054>   version-update:semver-patch - from .github/dependabot.yml
+  proxy | 2022/04/13 00:23:15 [014] GET https://pypi.org:443/simple/botocore/
+  proxy | 2022/04/13 00:23:15 [014] 200 https://pypi.org:443/simple/botocore/
+updater | INFO <job_344120054> Latest version is 1.24.39
+  proxy | 2022/04/13 00:23:16 [016] GET https://pypi.org:443/simple/botocore/
+  proxy | 2022/04/13 00:23:16 [016] 200 https://pypi.org:443/simple/botocore/
+updater | INFO <job_344120054> Requirements to unlock own
+updater | INFO <job_344120054> Requirements update strategy bump_versions
+updater | INFO <job_344120054> Updating botocore from  to 1.24.39
+  proxy | 2022/04/13 00:23:16 [018] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/commits?per_page=100
+  proxy | 2022/04/13 00:23:16 [018] * authenticating github api request
+  proxy | 2022/04/13 00:23:17 [018] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/commits?per_page=100
+  proxy | 2022/04/13 00:23:17 [020] GET https://pypi.org:443/pypi/botocore/json
+  proxy | 2022/04/13 00:23:17 [020] 200 https://pypi.org:443/pypi/botocore/json
+  proxy | 2022/04/13 00:23:17 [022] GET https://api.github.com:443/repos/boto/botocore/releases?per_page=100
+  proxy | 2022/04/13 00:23:17 [022] * authenticating github api request
+  proxy | 2022/04/13 00:23:17 [022] 200 https://api.github.com:443/repos/boto/botocore/releases?per_page=100
+  proxy | 2022/04/13 00:23:17 [024] GET https://api.github.com:443/repos/boto/botocore/contents/
+  proxy | 2022/04/13 00:23:17 [024] * authenticating github api request
+  proxy | 2022/04/13 00:23:17 [024] 200 https://api.github.com:443/repos/boto/botocore/contents/
+  proxy | 2022/04/13 00:23:17 [026] GET https://api.github.com:443/repos/boto/botocore/contents/docs
+  proxy | 2022/04/13 00:23:17 [026] * authenticating github api request
+  proxy | 2022/04/13 00:23:17 [026] 200 https://api.github.com:443/repos/boto/botocore/contents/docs
+  proxy | 2022/04/13 00:23:17 [028] GET https://api.github.com:443/repos/boto/botocore/contents/CHANGELOG.rst?ref=develop
+  proxy | 2022/04/13 00:23:17 [028] * authenticating github api request
+  proxy | 2022/04/13 00:23:17 [028] 200 https://api.github.com:443/repos/boto/botocore/contents/CHANGELOG.rst?ref=develop
+  proxy | 2022/04/13 00:23:18 [030] GET https://github.com:443/boto/botocore.git/info/refs?service=git-upload-pack
+  proxy | 2022/04/13 00:23:18 [030] * authenticating git server request (host: github.com)
+  proxy | 2022/04/13 00:23:18 [030] 200 https://github.com:443/boto/botocore.git/info/refs?service=git-upload-pack
+  proxy | 2022/04/13 00:23:18 [032] GET https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.0
+  proxy | 2022/04/13 00:23:18 [032] * authenticating github api request
+  proxy | 2022/04/13 00:23:18 [032] 200 https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.0
+  proxy | 2022/04/13 00:23:19 [034] GET https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.39
+  proxy | 2022/04/13 00:23:19 [034] * authenticating github api request
+  proxy | 2022/04/13 00:23:19 [034] 200 https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.39
+  proxy | 2022/04/13 00:23:19 [036] GET https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.0
+  proxy | 2022/04/13 00:23:19 [036] * authenticating github api request
+  proxy | 2022/04/13 00:23:19 [036] 200 https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.0
+  proxy | 2022/04/13 00:23:19 [038] GET https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.39
+  proxy | 2022/04/13 00:23:19 [038] * authenticating github api request
+  proxy | 2022/04/13 00:23:19 [038] 200 https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.39
+  proxy | 2022/04/13 00:23:20 [040] GET https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.0
+  proxy | 2022/04/13 00:23:20 [040] * authenticating github api request
+  proxy | 2022/04/13 00:23:20 [040] 200 https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.0
+  proxy | 2022/04/13 00:23:20 [042] GET https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.39
+  proxy | 2022/04/13 00:23:20 [042] * authenticating github api request
+  proxy | 2022/04/13 00:23:20 [042] 200 https://api.github.com:443/repos/boto/botocore/commits?sha=1.24.39
+updater | INFO <job_344120054> Submitting botocore pull request for creation
+updater | INFO <job_344120054> Checking if bokeh  needs updating
+updater | INFO <job_344120054> Ignored versions:
+updater | INFO <job_344120054>   version-update:semver-patch - from .github/dependabot.yml
+  proxy | 2022/04/13 00:23:21 [046] GET https://pypi.org:443/simple/bokeh/
+  proxy | 2022/04/13 00:23:21 [046] 200 https://pypi.org:443/simple/bokeh/
+updater | INFO <job_344120054> Latest version is 2.4.2
+  proxy | 2022/04/13 00:23:21 [048] GET https://pypi.org:443/simple/bokeh/
+  proxy | 2022/04/13 00:23:21 [048] 200 https://pypi.org:443/simple/bokeh/
+updater | INFO <job_344120054> Requirements to unlock own
+updater | INFO <job_344120054> Requirements update strategy bump_versions
+updater | INFO <job_344120054> Updating bokeh from  to 2.4.2
+  proxy | 2022/04/13 00:23:21 [050] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/commits?per_page=100
+  proxy | 2022/04/13 00:23:21 [050] * authenticating github api request
+  proxy | 2022/04/13 00:23:21 [050] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/commits?per_page=100
+  proxy | 2022/04/13 00:23:21 [052] GET https://pypi.org:443/pypi/bokeh/json
+  proxy | 2022/04/13 00:23:21 [052] 200 https://pypi.org:443/pypi/bokeh/json
+  proxy | 2022/04/13 00:23:21 [054] GET https://api.github.com:443/repos/bokeh/bokeh/releases?per_page=100
+  proxy | 2022/04/13 00:23:21 [054] * authenticating github api request
+  proxy | 2022/04/13 00:23:21 [054] 200 https://api.github.com:443/repos/bokeh/bokeh/releases?per_page=100
+  proxy | 2022/04/13 00:23:22 [056] GET https://api.github.com:443/repos/bokeh/bokeh/contents/
+  proxy | 2022/04/13 00:23:22 [056] * authenticating github api request
+  proxy | 2022/04/13 00:23:22 [056] 200 https://api.github.com:443/repos/bokeh/bokeh/contents/
+  proxy | 2022/04/13 00:23:22 [058] GET https://api.github.com:443/repos/bokeh/bokeh/contents/CHANGELOG?ref=branch-3.0
+  proxy | 2022/04/13 00:23:22 [058] * authenticating github api request
+  proxy | 2022/04/13 00:23:22 [058] 200 https://api.github.com:443/repos/bokeh/bokeh/contents/CHANGELOG?ref=branch-3.0
+  proxy | 2022/04/13 00:23:22 [060] GET https://github.com:443/bokeh/bokeh.git/info/refs?service=git-upload-pack
+  proxy | 2022/04/13 00:23:22 [060] * authenticating git server request (host: github.com)
+  proxy | 2022/04/13 00:23:22 [060] 200 https://github.com:443/bokeh/bokeh.git/info/refs?service=git-upload-pack
+  proxy | 2022/04/13 00:23:22 [062] GET https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.0
+  proxy | 2022/04/13 00:23:22 [062] * authenticating github api request
+  proxy | 2022/04/13 00:23:22 [062] 200 https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.0
+  proxy | 2022/04/13 00:23:23 [064] GET https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.2
+  proxy | 2022/04/13 00:23:23 [064] * authenticating github api request
+  proxy | 2022/04/13 00:23:23 [064] 200 https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.2
+  proxy | 2022/04/13 00:23:23 [066] GET https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.0
+  proxy | 2022/04/13 00:23:23 [066] * authenticating github api request
+  proxy | 2022/04/13 00:23:23 [066] 200 https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.0
+  proxy | 2022/04/13 00:23:23 [068] GET https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.2
+  proxy | 2022/04/13 00:23:23 [068] * authenticating github api request
+  proxy | 2022/04/13 00:23:23 [068] 200 https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.2
+  proxy | 2022/04/13 00:23:23 [070] GET https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.0
+  proxy | 2022/04/13 00:23:23 [070] * authenticating github api request
+  proxy | 2022/04/13 00:23:23 [070] 200 https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.0
+  proxy | 2022/04/13 00:23:23 [072] GET https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.2
+  proxy | 2022/04/13 00:23:23 [072] * authenticating github api request
+  proxy | 2022/04/13 00:23:23 [072] 200 https://api.github.com:443/repos/bokeh/bokeh/commits?sha=2.4.2
+updater | INFO <job_344120054> Submitting bokeh pull request for creation
+updater | INFO <job_344120054> Checking if aiohttp  needs updating
+updater | INFO <job_344120054> Ignored versions:
+updater | INFO <job_344120054>   version-update:semver-patch - from .github/dependabot.yml
+  proxy | 2022/04/13 00:23:24 [076] GET https://pypi.org:443/simple/aiohttp/
+  proxy | 2022/04/13 00:23:24 [076] 200 https://pypi.org:443/simple/aiohttp/
+updater | INFO <job_344120054> Latest version is 3.8.1
+  proxy | 2022/04/13 00:23:25 [078] GET https://pypi.org:443/simple/aiohttp/
+  proxy | 2022/04/13 00:23:25 [078] 200 https://pypi.org:443/simple/aiohttp/
+updater | INFO <job_344120054> Requirements to unlock own
+updater | INFO <job_344120054> Requirements update strategy bump_versions
+updater | INFO <job_344120054> Updating aiohttp from  to 3.8.1
+  proxy | 2022/04/13 00:23:25 [080] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/commits?per_page=100
+  proxy | 2022/04/13 00:23:25 [080] * authenticating github api request
+  proxy | 2022/04/13 00:23:25 [080] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/commits?per_page=100
+  proxy | 2022/04/13 00:23:26 [082] GET https://pypi.org:443/pypi/aiohttp/json
+  proxy | 2022/04/13 00:23:26 [082] 200 https://pypi.org:443/pypi/aiohttp/json
+  proxy | 2022/04/13 00:23:26 [084] GET https://api.github.com:443/repos/aio-libs/aiohttp/releases?per_page=100
+  proxy | 2022/04/13 00:23:26 [084] * authenticating github api request
+  proxy | 2022/04/13 00:23:26 [084] 200 https://api.github.com:443/repos/aio-libs/aiohttp/releases?per_page=100
+  proxy | 2022/04/13 00:23:27 [086] GET https://api.github.com:443/repos/aio-libs/aiohttp/contents/
+  proxy | 2022/04/13 00:23:27 [086] * authenticating github api request
+  proxy | 2022/04/13 00:23:27 [086] 200 https://api.github.com:443/repos/aio-libs/aiohttp/contents/
+  proxy | 2022/04/13 00:23:27 [088] GET https://api.github.com:443/repos/aio-libs/aiohttp/contents/docs
+  proxy | 2022/04/13 00:23:27 [088] * authenticating github api request
+  proxy | 2022/04/13 00:23:27 [088] 200 https://api.github.com:443/repos/aio-libs/aiohttp/contents/docs
+  proxy | 2022/04/13 00:23:27 [090] GET https://api.github.com:443/repos/aio-libs/aiohttp/contents/CHANGES.rst?ref=master
+  proxy | 2022/04/13 00:23:27 [090] * authenticating github api request
+  proxy | 2022/04/13 00:23:27 [090] 200 https://api.github.com:443/repos/aio-libs/aiohttp/contents/CHANGES.rst?ref=master
+  proxy | 2022/04/13 00:23:27 [092] GET https://github.com:443/aio-libs/aiohttp.git/info/refs?service=git-upload-pack
+  proxy | 2022/04/13 00:23:27 [092] * authenticating git server request (host: github.com)
+  proxy | 2022/04/13 00:23:27 [092] 200 https://github.com:443/aio-libs/aiohttp.git/info/refs?service=git-upload-pack
+  proxy | 2022/04/13 00:23:27 [094] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:27 [094] * authenticating github api request
+  proxy | 2022/04/13 00:23:27 [094] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:27 [096] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+  proxy | 2022/04/13 00:23:27 [096] * authenticating github api request
+  proxy | 2022/04/13 00:23:27 [096] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+  proxy | 2022/04/13 00:23:28 [098] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:28 [098] * authenticating github api request
+  proxy | 2022/04/13 00:23:28 [098] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:28 [100] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+  proxy | 2022/04/13 00:23:28 [100] * authenticating github api request
+  proxy | 2022/04/13 00:23:28 [100] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+  proxy | 2022/04/13 00:23:28 [102] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:28 [102] * authenticating github api request
+  proxy | 2022/04/13 00:23:28 [102] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.7.0
+  proxy | 2022/04/13 00:23:28 [104] GET https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+  proxy | 2022/04/13 00:23:28 [104] * authenticating github api request
+  proxy | 2022/04/13 00:23:28 [104] 200 https://api.github.com:443/repos/aio-libs/aiohttp/commits?sha=v3.8.1
+updater | INFO <job_344120054> Submitting aiohttp pull request for creation
+updater | INFO <job_344120054> Checking if boto3  needs updating
+updater | INFO <job_344120054> Ignored versions:
+updater | INFO <job_344120054>   version-update:semver-patch - from .github/dependabot.yml
+  proxy | 2022/04/13 00:23:29 [108] GET https://pypi.org:443/simple/boto3/
+  proxy | 2022/04/13 00:23:29 [108] 200 https://pypi.org:443/simple/boto3/
+updater | INFO <job_344120054> Latest version is 1.21.39
+  proxy | 2022/04/13 00:23:29 [110] GET https://pypi.org:443/simple/boto3/
+  proxy | 2022/04/13 00:23:29 [110] 200 https://pypi.org:443/simple/boto3/
+updater | INFO <job_344120054> Requirements to unlock own
+updater | INFO <job_344120054> Requirements update strategy bump_versions
+updater | INFO <job_344120054> Updating boto3 from  to 1.21.39
+  proxy | 2022/04/13 00:23:30 [112] GET https://api.github.com:443/repos/ankitvgupta/dependabot-demo/commits?per_page=100
+  proxy | 2022/04/13 00:23:30 [112] * authenticating github api request
+  proxy | 2022/04/13 00:23:30 [112] 200 https://api.github.com:443/repos/ankitvgupta/dependabot-demo/commits?per_page=100
+  proxy | 2022/04/13 00:23:30 [114] GET https://pypi.org:443/pypi/boto3/json
+  proxy | 2022/04/13 00:23:30 [114] 200 https://pypi.org:443/pypi/boto3/json
+  proxy | 2022/04/13 00:23:30 [116] GET https://api.github.com:443/repos/boto/boto3/releases?per_page=100
+  proxy | 2022/04/13 00:23:30 [116] * authenticating github api request
+  proxy | 2022/04/13 00:23:30 [116] 200 https://api.github.com:443/repos/boto/boto3/releases?per_page=100
+  proxy | 2022/04/13 00:23:30 [118] GET https://api.github.com:443/repos/boto/boto3/contents/
+  proxy | 2022/04/13 00:23:30 [118] * authenticating github api request
+  proxy | 2022/04/13 00:23:30 [118] 200 https://api.github.com:443/repos/boto/boto3/contents/
+  proxy | 2022/04/13 00:23:30 [120] GET https://api.github.com:443/repos/boto/boto3/contents/docs
+  proxy | 2022/04/13 00:23:30 [120] * authenticating github api request
+  proxy | 2022/04/13 00:23:31 [120] 200 https://api.github.com:443/repos/boto/boto3/contents/docs
+  proxy | 2022/04/13 00:23:31 [122] GET https://api.github.com:443/repos/boto/boto3/contents/CHANGELOG.rst?ref=develop
+  proxy | 2022/04/13 00:23:31 [122] * authenticating github api request
+  proxy | 2022/04/13 00:23:31 [122] 200 https://api.github.com:443/repos/boto/boto3/contents/CHANGELOG.rst?ref=develop
+  proxy | 2022/04/13 00:23:31 [124] GET https://github.com:443/boto/boto3.git/info/refs?service=git-upload-pack
+  proxy | 2022/04/13 00:23:31 [124] * authenticating git server request (host: github.com)
+  proxy | 2022/04/13 00:23:31 [124] 200 https://github.com:443/boto/boto3.git/info/refs?service=git-upload-pack
+  proxy | 2022/04/13 00:23:32 [126] GET https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.0
+  proxy | 2022/04/13 00:23:32 [126] * authenticating github api request
+  proxy | 2022/04/13 00:23:32 [126] 200 https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.0
+  proxy | 2022/04/13 00:23:32 [128] GET https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.39
+  proxy | 2022/04/13 00:23:32 [128] * authenticating github api request
+  proxy | 2022/04/13 00:23:32 [128] 200 https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.39
+  proxy | 2022/04/13 00:23:32 [130] GET https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.0
+  proxy | 2022/04/13 00:23:32 [130] * authenticating github api request
+  proxy | 2022/04/13 00:23:32 [130] 200 https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.0
+  proxy | 2022/04/13 00:23:32 [132] GET https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.39
+  proxy | 2022/04/13 00:23:32 [132] * authenticating github api request
+  proxy | 2022/04/13 00:23:32 [132] 200 https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.39
+  proxy | 2022/04/13 00:23:33 [134] GET https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.0
+  proxy | 2022/04/13 00:23:33 [134] * authenticating github api request
+  proxy | 2022/04/13 00:23:33 [134] 200 https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.0
+  proxy | 2022/04/13 00:23:33 [136] GET https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.39
+  proxy | 2022/04/13 00:23:33 [136] * authenticating github api request
+  proxy | 2022/04/13 00:23:33 [136] 200 https://api.github.com:443/repos/boto/boto3/commits?sha=1.21.39
+updater | INFO <job_344120054> Submitting boto3 pull request for creation
+updater | INFO <job_344120054> Checking if absl-py  needs updating
+updater | INFO <job_344120054> Ignored versions:
+updater | INFO <job_344120054>   version-update:semver-patch - from .github/dependabot.yml
+  proxy | 2022/04/13 00:23:34 [140] GET https://pypi.org:443/simple/absl-py/
+  proxy | 2022/04/13 00:23:34 [140] 200 https://pypi.org:443/simple/absl-py/
+updater | INFO <job_344120054> Latest version is 1.0.0
+updater | INFO <job_344120054> No update needed for absl-py 
+updater | INFO <job_344120054> Finished job processing
+updater | INFO Results:
+updater | +---------+-------------------------------+
+updater | |   Changes to Dependabot Pull Requests   |
+updater | +---------+-------------------------------+
+updater | | created | botocore ( from  to 1.24.39 ) |
+updater | | created | bokeh ( from  to 2.4.2 )      |
+updater | | created | aiohttp ( from  to 3.8.1 )    |
+updater | | created | boto3 ( from  to 1.21.39 )    |
+updater | +---------+-------------------------------+
+updater | time="2022-04-13T00:23:34Z" level=info msg="task complete" container_id=job-344120054-updater exit_code=0 job_id=344120054 step=updater
