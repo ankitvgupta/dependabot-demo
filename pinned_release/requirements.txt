@@ -1,5 +1,5 @@
 absl-py == 1.0.0
 aiohttp == 3.7.0
 bokeh == 2.4.0
-boto3 == 1.21.0
+boto3 == 1.22.4
 botocore == 1.24.0
